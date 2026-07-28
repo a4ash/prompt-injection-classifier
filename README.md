@@ -17,6 +17,9 @@ Built as a portfolio project bridging machine learning and AI security.
 | Random Forest (best baseline) | 0.971 | 0.974 | 0.972 |
 | DistilBERT (fine-tuned) | 0.986 | 0.990 | 0.988 |
 
+![Baseline vs Transformer](results/baseline_vs_transformer.png)
+![Confusion matrices](results/rf_vs_distilbert_confusion.png)
+
 *Metrics are for the injection class on the leakage-safe test set (798 injection examples; 1,380 total).*
 
 **DistilBERT outperforms the strongest baseline**, and the gap is clearest on the security-critical metric: the transformer missed only 8/798 attacks (~1%) versus Random Forest's 21/798 (~2.6%). Analyzing where the models disagree, DistilBERT correctly classified 33 attacks the baseline missed, while the baseline won on only 8 — evidence that contextual understanding catches paraphrased and obfuscated injections that TF-IDF misses.
