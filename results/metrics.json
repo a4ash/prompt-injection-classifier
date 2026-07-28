@@ -1,0 +1,20 @@
+{
+  "test_total": 1380,
+  "test_injection": 798,
+  "test_safe": 582,
+  "random_forest": {
+    "precision": 0.9712,
+    "recall": 0.9737,
+    "f1": 0.9725,
+    "missed_attacks": 21
+  },
+  "distilbert": {
+    "precision": 0.9863,
+    "recall": 0.99,
+    "f1": 0.9881,
+    "missed_attacks": 8
+  },
+  "rf_leakage_safe_f1": 0.9725,
+  "rf_naive_f1": 0.9892,
+  "leakage_inflation": 0.0167
+}
