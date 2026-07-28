@@ -1,4 +1,5 @@
 # Prompt Injection Classifier
+Model on HF ↗ (https://huggingface.co/A4Ash/prompt-injection-distilbert)
 
 A binary text classifier that detects prompt injection and jailbreak attacks against large language models. This project compares classical machine learning baselines (TF-IDF + scikit-learn) against a fine-tuned transformer (DistilBERT), with a focus on rigorous evaluation and data-quality analysis.
 
@@ -83,7 +84,7 @@ python -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Run the notebooks in order (`01` → `04`) from the `notebooks/` directory. The processed data splits are included for reproducibility; the fine-tuned model is hosted on the HuggingFace Hub (link below).
+Run the notebooks in order (`01` → `04`) from the `notebooks/` directory. The processed data splits are included for reproducibility; the fine-tuned model is hosted on the HuggingFace Hub ↗ (https://huggingface.co/A4Ash/prompt-injection-distilbert).
 
 ## Usage
 
