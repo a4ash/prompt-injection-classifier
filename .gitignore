@@ -1,0 +1,15 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Data — raw downloads (keep processed/ for reproducibility)
+data/raw/
+
+# Models — too large for git; hosted on HuggingFace instead
+models/
+
+# Env / secrets
+.env
+.DS_Store
